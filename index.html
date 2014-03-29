@@ -107,10 +107,7 @@
 
   <section>
     <img src="images/geekroyale-skull.png" alt="">
-  </section>
-  <section>
-    <h1>geek royale</h1>
-    <p>Copenhagens Finest Themes (tm)</p>
+    <p>geek Röyale - copenhagens finest themes</p>
   </section>
 
 <!--
@@ -140,7 +137,8 @@
     <i class="fa fa-ambulance"></i>        
   </section>
 -->
-  <section>
+
+<!--   <section>
 
     <h2>
     "As a themer I want to implement an awesome design into Drupal 
@@ -150,7 +148,7 @@
       I will accept this story when in not loosing my sanity inside a php array"
       </h2>
   </section>
-
+ -->
   <section>
     <h1>So What is <br><span class="fragment roll-in">Actually</span> wrong <br>with <br> Drupal <span class="fragment roll-in">Theming</span> ? </h1>
     <p class="fragment roll-in">From the frontend perspective ?</p>
@@ -289,12 +287,8 @@
     <h1>Pretty please...</h1>
   </section>
 
-  <section>
-    <h1>TWIG "initiative"</h1>
-    <p>Was not an official thing</p>
-  </section>
-  <section>
-    <h1>Guerilla TWIG</h1>
+    <section data-background="images/wtf.png">
+    <h1>TWIG</h1>
     <h2>Anger driven development ;)</h2>
   </section>
 
@@ -319,7 +313,7 @@
     <h2> a little bit of french elegance</h2>
   </section>
 
-  <section data-background="images/principles.png">
+  <section data-background="images/planning.gif">
     <br><br><br><br><br>
     <h1>Lets make a plan</h1>
   </section>
@@ -524,7 +518,7 @@
   <section>
     <h1>Who does that ?</h1>
     <h2 class="fragment">Bad Developers</h2>
-    <h2 class="fragment">No Themer wanna touch that shit</h2>
+    <h2 class="fragment">Themes are markup & css!</h2>
   </section>
   
   <section>
@@ -551,12 +545,6 @@
     <img src="images/block-sitebranding.png">
   </section>
 
-  <section>
-    <h1>Also in Drupal8</h1>
-    * Backbone
-    * modernizr
-    * 
-  </section>
 
 </section>
 
@@ -1001,14 +989,14 @@
     <h2>the Markup</h2>
     <pre><code contenteditable>
       
-      &lt;section class="tags"&gt;
+      &lt;div class="tags"&gt;
         <span>3 tags:</span>
         
         <a href="#" class="odd">foo</a>, 
         <a href="#" class="even thedesignerisanidiot">bar</a>, 
         <a href="#" class="odd">baz</a>.
 
-      &lt;/section&gt;
+      &lt;/div&gt;
     </code></pre>
       <small>the markup</small>
   
@@ -1019,6 +1007,20 @@
       }
       </code></pre>
   </section>
+  
+  <section>
+    <h2>node</h2>
+    <pre><code contenteditable>
+        <article class="...">
+        ....
+        {{ content.field_tags}}
+
+        {{ content|without('field_tags') }}
+        </article>
+      </code></pre>
+      <small>node.html.twig</small>
+  </section>
+
 
   <section>
     <pre><code contenteditable>
@@ -1171,11 +1173,6 @@
     <img src="images/twigblock-frontpage.png">
   </section>
 
-  <section>
-    <h1> html.html.twig + page.html.twig</h1>
-    <p> <a href="https://drupal.org/node/2090967"></a>drupal.org/node/2090967</p>
-  </section>
-
 
 </section>
 
@@ -1265,11 +1262,11 @@
 <section id="resources">
   <h1>resourses</h1>
   <p>
-    <a href="http://twig.sensiolabs.org/doc/templates.html">TWIG documentation: twig.sensiolabs.org/doc/templates.html</a>
+    <a href="http://twig.sensiolabs.org/doc/templates.html">TWIG documentation</a>
     <br>
     <a href="http://drupaltwig.org">drupaltwig.org</a> 
     <br>
-    Slides: http://mortendk.github.io/drupal8-twig-stockholm-2014
+    <i class="fa fa-github"></i>http://mortendk.github.io/drupal8-twig-chicago-2014
   </p>    
 </section>
 
